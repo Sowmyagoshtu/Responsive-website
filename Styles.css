@@ -1,0 +1,355 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    
+      
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+    padding: 25px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #4a90e2;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a90e2 50%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px; /* Add padding to avoid overlap with the fixed navbar */
+}
+.content {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    padding: 50px;
+}
+.intro {
+    flex: 1;
+    padding: 20px;
+}
+.intro h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.intro p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #555;
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    margin-top: 100px;
+}
+.image-container img {
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: rotate 16s infinite;
+}
+.image-container img:nth-child(1) {
+    animation-delay: 0s;
+}
+.image-container img:nth-child(2) {
+    animation-delay: 4s;
+}
+.image-container img:nth-child(3) {
+    animation-delay: 8s;
+}
+.image-container img:nth-child(4) {
+    animation-delay: 12s;
+}
+@keyframes rotate {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+.form-section, .table-section, .list-section, .media-section {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #4a90e2;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, select, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    padding: 0.7rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #357ab7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black; /* Add this to set the border for the entire table */
+}
+th, td {
+    border: 1px solid black; /* Increase the border width for th and td */
+    padding: 8px;
+    text-align: center;
+}
+th { 
+    border: 1px solid black; 
+    background-color: #f2f2f2;
+  
+}
+.timetable-header {
+    font-weight: bold;
+    border: 1px solid black; 
+}
+.no-bottom-border {
+    border-bottom: none;
+}
+.no-top-border {
+    border-top: none;
+}
+.schedule-header {
+    font-weight: bold;
+    border: 1px solid black; 
+}
+.day {
+    font-weight: bold;
+    border: 1px solid black; 
+}
+.schedule {
+    text-align: left;
+    border: 1px solid black; 
+}
+
+.media-section iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+.list-item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    list-style-type: none;
+}
+.list-item:hover {
+    background-color: #357ab7;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixed position for the footer */
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.float{
+    float: right;
+}
+
+
+/* Responsive Styles */
+ @media (max-width: 1200px) {
+    .content {
+        padding: 30px;
+    }
+
+    .image-container {
+        width: 350px;
+        height: 275px;
+        margin-top: 50px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+    .float{
+        float: none;
+    }
+    
+    
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 80px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: auto;
+        
+        margin-top: 370px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+    }
+    
+    .form-section, .table-section, .list-section, .media-section {
+        padding: 1rem;
+    }
+    .float{
+        float: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-top: 50px;
+    }
+    .image-container {
+        width: 100%;
+        height: auto;
+        
+        margin-top: 90px;
+    }
+    
+    .intro h1 {
+        font-size: 1.8em;
+    }
+    
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+    }
+    
+    .form-section, .table-section, .list-section, .media-section {
+        padding: 0.5rem;
+    }
+    
+    .list-item {
+        margin: 0.5rem 0;
+    }
+    .float{
+        float: none;
+    }
+}
+html {
+    scroll-behavior: smooth;
+} 

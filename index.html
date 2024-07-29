@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <h1>Events</h1>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse float-right" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Event Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+              
+            </ul>
+          </div>
+        
+        </div>
+    </nav>
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <div class="intro">
+                <h1>Welcome to Our Events Website</h1>
+                <p>Your gateway to discovering the best events around you. Join us and make memorable experiences!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="image-container">
+                <img src="event-1.jpg" alt="Events Image">
+                <img src="event-2.jpg" alt="Events Image">
+                <img src="Event-3.jpg" alt="Events Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Schedule Table -->
+    <div class="table-section">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th rowspan="2" class="no-bottom-border">Day</th>
+                <th colspan="2" class="timetable-header">Timetable</th>
+                <th rowspan="3" class="no-bottom-border">Events</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="schedule-header">Schedule</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th style="border: 1px solid black; ">Start</th>
+                <th style="border: 1px solid black; ">End</th>
+            </tr>
+            <tr>
+                <td class="day" rowspan="2">Monday</td>
+                <td class="no-bottom-border" style="border-right: 1px solid black;">8:00 a.m</td>
+                <td class="no-bottom-border">5:00 p.m</td>
+                <td style="border: 1px solid black; ">Event1</td>
+            </tr>
+            <tr>
+                <td class="no-top-border" style="border-right: 1px solid black;"></td>
+                <td class="no-top-border"></td>
+                <td style="border: 1px solid black; ">Event2</td>
+            </tr>
+            <tr>
+                <td class="day" rowspan="3">Tuesday</td>
+                <td style="border: 1px solid black; ">8:00 a.m</td>
+                <td style="border: 1px solid black; ">5:00 p.m</td>
+                <td style="border: 1px solid black; ">Event3</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; ">11:00 a.m</td>
+                <td style="border: 1px solid black; ">2:00 p.m</td>
+                <td style="border: 1px solid black; ">Event4</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; ">2:00 p.m</td>
+                <td style="border: 1px solid black; ">5:00 p.m</td>
+                <td style="border: 1px solid black; ">Event5</td>
+            </tr>
+            <tr>
+                <td class="day">Wednesday</td>
+                <td style="border: 1px solid black; ">8:00 a.m</td>
+                <td style="border: 1px solid black; ">12:00 p.m</td>
+                <td style="border: 1px solid black; ">Event6</td>
+            </tr>
+            <tr>
+                <td class="day" rowspan="2">Thursday</td>
+                <td style="border: 1px solid black; ">8:00 a.m</td>
+                <td style="border: 1px solid black; ">5:00 p.m</td>
+                <td style="border: 1px solid black; ">Event7</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; ">11:00 a.m</td>
+                <td style="border: 1px solid black; ">2:00 p.m</td>
+                <td style="border: 1px solid black; ">Event8</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- List of Sponsors-->
+    <div class="list-section">
+        <h2>Sponsors</h2>
+        <ul>
+            <li class="list-item">Tech Solutions Inc.</li>
+            <li class="list-item">Global Marketing Co.</li>
+            <li class="list-item">Innovative Designs Ltd.</li>
+            <li class="list-item">EcoFriendly Products</li>
+            <li class="list-item">Creative Ventures</li>
+        </ul>
+    </div>
+
+    <!-- Media Section -->
+    <div class="media-section">
+        <h2>Media</h2>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+        <!-- Registration Form -->
+        <div class="form-section">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="gender">Gender:</label>
+                <div id="gender">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file">
+                
+                <label for="attending">Attending:</label>
+                <select id="attending" name="attending">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="maybe">Maybe</option>
+                </select>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Events Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
